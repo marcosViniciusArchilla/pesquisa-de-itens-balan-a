@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Pesquisa de Itens</title>
+    <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Itens</h1>
+        <p>Faça upload do arquivo Excel com os dados dos itens.</p>
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
+
+        <p>Digite o código ou a descrição do item:</p>
+        <input type="text" id="searchInput" placeholder="Código ou Descrição">
+        <button id="searchButton">Pesquisar</button>
+        <button id="newSearchButton" class="button" style="display:none;">Nova Pesquisa</button>
+
+        <h3>Resultado:</h3>
+        <p id="result">Nenhum dado pesquisado ainda.</p>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
+    
